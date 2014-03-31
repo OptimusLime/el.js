@@ -4,5 +4,6 @@
   "description": "Fork of el.js with a component added on",
   "scripts": [
     "el.js"
-  ]
+  ],
+  "main": "el.js"
 }
