@@ -1,0 +1,8 @@
+{
+  "name": "el.js",
+  "version": "0.0.1",
+  "description": "Fork of el.js with a component added on",
+  "scripts": [
+    "el.js"
+  ]
+}

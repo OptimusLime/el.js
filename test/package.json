@@ -1,0 +1,5 @@
+{
+  "name": "test",
+  "main" : "../build/build.js"
+
+}

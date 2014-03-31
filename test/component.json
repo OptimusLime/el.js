@@ -1,0 +1,6 @@
+{
+  "name": "test",
+  "scripts": [
+    "../build/build.js"
+  ]
+}
