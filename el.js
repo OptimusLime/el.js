@@ -54,6 +54,24 @@ function el(tagName, attrs, child) {
     }
   }
 
+  //A little helper: if your attrs includes style object
+  //we turn the style object into a style string for direct application
+  if(typeof attrs["style"] != "string" && typeof attrs["style"] == "object")
+  {
+    var styleObj = attrs["style"];
+    //we build the string
+    var concat = "";
+
+    //for each style object
+    for(var key in styleObj) 
+      //concat the key + value with : inbetween (e.g. width: 100px;)
+      concat += (key + ": " styleObj + "; ");
+
+    //grab the concatenated style string
+    attrs["style"] = concat; 
+  }
+
+
   // create the element
   var element = document.createElement(tagName);
   for(var i = 0; i < child.length; i += 1) {
