@@ -65,7 +65,7 @@ function el(tagName, attrs, child) {
     //for each style object
     for(var key in styleObj) 
       //concat the key + value with : inbetween (e.g. width: 100px;)
-      concat += (key + ": " styleObj + "; ");
+      concat += (key + ": " + styleObj + "; ");
 
     //grab the concatenated style string
     attrs["style"] = concat; 
